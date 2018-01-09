@@ -1,0 +1,297 @@
+<!Doctype html>
+
+
+<html>
+<title>Casag Site</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="shortcut icon" href="img/Logo.png" type="image/x-icon"> 
+</head>
+<body>
+	<div class="header-banner">
+		<header class="container-fluid">
+			<nav>
+				<div class="container">
+					<div class="row">
+						<!--LOGO-->
+						<div class="col-md-6">
+							<div class="logo">
+					      		<a class="navbar-brand" href="#"><img src="img/Logo.png" alt="Logo"/></a>
+					    	</div>
+						</div>
+
+						<!--MENU-->
+						<div class="col-md-6">
+							<ul class="nav navbar-nav">
+								<li><a href="">ABOUT</a></li>
+								<li><a href="">GALLERY</a></li>
+								<li><a href="">BLOG</a></li>
+								<li><a href="">CONTACT</a></li>
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container">
+			<div class="banner-content">
+				<h1>PHOTO SHOOT SHOOT</h1>
+				<p>Photographer & Graphic Designer by Virgil Cayasa</p>
+				<div class="explore-btn">
+					<a href="#">START EXPLORING <img class="travel-img" src="img/travel.png"  alt="travel"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--SECTION II-->
+	<div class="second-section">
+		<div class="container">
+			<div class="second-section-content">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="started">
+							It All Started with Picture
+						</div>
+						<div class="thanks-for-stoping">
+							Hey, thanks for stopping by. My name is Virgil and I’m a Photographer & Graphic Designer based in Surigao City where I make cool things for agencies and brands around globe. If you like my work then don’t hesitate to reach out.
+						</div>
+						<div class="already-known">
+							I am already known for pushing the best of imagery and graphic design. I evolve, photography evolves, graphics evolves, clients evolve, so the way we get the job done should evolve as well. I want to focus on what’s actually needed and slash the stuff that isn’t. I aim at being a proponent for good photography and a voice for change within the business. I’ve got some bold ideas and can’t wait to share.
+						</div>
+						<div class="more-about-me-btn">
+							<a href="#">MORE ABOUT ME</a>
+						</div>
+					</div>
+				</div>							
+			</div>
+		</div>
+	</div><!--END OF SECOND SECTION-->
+
+	<!--SECTION III-->
+	<div class="third-section">
+		<div class="container">
+			<div class="third-section-content">
+				<div class="photo-graphics-btn">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<div class="photography-btn">
+								<a href="#">PHOTOGRAPHY</a>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="graphics-btn">
+								<a href="#">GRAPHICS</a>
+							</div>
+						</div>
+					</div>			
+				</div>
+				<script>
+					function renderGrid() {
+					    var blocks = document.getElementById("grid").children;
+						var cols = 3, newleft, newtop;
+					    for(var i = 1; i < blocks.length; i++){
+							if (i % cols == 0) {
+								newtop = (blocks[i-cols].offsetTop + blocks[i-cols].offsetHeight);
+							    blocks[i].style.top = newtop+"px";
+							} else {
+								if(blocks[i-cols]){
+									newleft = (blocks[i-cols].offsetTop + blocks[i-cols].offsetHeight);
+									blocks[i].style.top = newleft+"px";
+								}
+								newleft = (blocks[i-1].offsetLeft + blocks[i-1].offsetWidth);
+								blocks[i].style.left = newleft+"px";	
+							}
+					    }
+					}
+					window.addEventListener("load", renderGrid, false);
+					window.addEventListener("resize", renderGrid, false);
+				</script>
+
+				<div id="grid">
+					<div class="grid-item grid-one">
+						<a href="#">
+							<div class="one">
+								<div class="logo-hover">
+									<img src="img/Graphics/flyer.jpg" />
+									<div class="text">
+										<h1>FLYER</h1>
+										<p>I strive for two things in design: simplicity and clarity.
+											Great design is born of those two things.</p>	
+									</div>
+								</div>
+							</div>   
+						</a> 
+					</div>
+
+					<div class="grid-item grid-two">
+						<a href="#">
+							<div class="two">
+								<div class="logo-hover">
+									<img src="img/Graphics/webpage.jpg" />
+									<div class="text">
+										<h1>WEB DESIGN</h1>
+										<p>A designer knows he has achieved perfection
+											not when there is nothing left to add, but when
+											there is nothing left to take away.</p>	
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="grid-item grid-third">
+						<a href="#">
+							<div class="third">
+								<div class="logo-hover">
+									<img src="img/Graphics/shirt.jpg" />
+									<div class="text">
+										<h1>SHIRT DESIGN</h1>
+										<p>The brand you waer is the brand you are.</p>	
+									</div>
+								</div>
+							</div>
+						</a>		
+					</div>
+
+					<div class="grid-item grid-four">
+						<a href="#">
+							<div class="four">
+								<div class="logo-hover">
+									<img src="img/Graphics/logo.jpg" />			
+									<div class="text">
+										<h1>LOGO</h1>
+										<p>There are three responses to a piece of design
+											– yes, no, and WOW! Wow is the one to aim for.</p>	
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="grid-item grid-five">
+						<a href="#">
+							<div class="five">
+								<div class="logo-hover">
+										<img src="img/Graphics/packaging.jpg" />		
+									<div class="text">
+										<h1>PRODUCT PACKAGING DESIGN</h1>
+										<p>Don't design for brands. Design for people interacting with brands.</p>	
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!--END OF THIRD SECTION-->
+
+	<!--SECTION IV-->
+	<div class="fourth-section">
+		<div class="container">
+			<div class="fourth-section-content">
+				
+				<div class="couresel align-center">
+					<div class="img-icon">
+						<img src="img/Icon.png" alt="Icon" />
+						<p class="flexible">Flexible and excellent in performing the job! Thanks for covering my tours!</p>
+						<img class="adrian-img" src="img/adrian.png" alt="Icon" />
+						<p class="adrian-cam">Adrian Camingue</p>
+						<p class="xiargao">Xargao Tours - Owner</p>
+					</div>
+					<div class="img-icon">
+						<img src="img/Icon.png" alt="Icon" />
+						<p class="flexible">Flexible and excellent in performing the job! Thanks for covering my tours!</p>
+						<img class="adrian-img" src="img/adrian.png" alt="Icon" />
+						<p class="adrian-cam">Adrian Camingue</p>
+						<p class="xiargao">Xargao Tours - Owner</p>
+					</div>
+					<div class="img-icon">
+						<img src="img/Icon.png" alt="Icon" />
+						<p class="flexible">Flexible and excellent in performing the job! Thanks for covering my tours!</p>
+						<img class="adrian-img" src="img/adrian.png" alt="Icon" />
+						<p class="adrian-cam">Adrian Camingue</p>
+						<p class="xiargao">Xargao Tours - Owner</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div><!--END OF FOURTH SECTION-->
+
+
+	<!--SECTION V-->
+	<div class="fifth-section">
+		<div class="container">
+			<div class="fifth-section-content">
+				<div class="logo-slider">
+					<div class="img-icon">
+						<img src="img/xiargao.png" />
+					</div>
+					<div>
+						<img src="img/dreamarchers.png" />
+					</div>
+					<div>
+						<img src="img/sutana-ryan.png" />
+					</div>
+					<div>
+						<img src="img/static-logo.png" />
+					</div>
+					<div>
+						<img src="img/Jedi-copy.png" />
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('.couresel').slick({
+		  arrows: false,
+		  dots: true,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  adaptiveHeight: true
+		});
+
+		$('.logo-slider').slick({
+			arrows: false,
+		  slidesToShow: 5,
+		  slidesToScroll: 1
+		});
+
+		var filtered = false;
+
+		$('.js-filter').on('click', function(){
+		  if (filtered === false) {
+		    $('.filtering').slick('slickFilter',':even');
+		    $(this).text('Unfilter Slides');
+		    filtered = true;
+		  } else {
+		    $('.filtering').slick('slickUnfilter');
+		    $(this).text('Filter Slides');
+		    filtered = false;
+		  }
+		});
+	});		
+	</script>
+
+	<footer>
+		
+	</footer>
+
+</body>
+</html>
