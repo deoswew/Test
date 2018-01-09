@@ -1,0 +1,501 @@
+body {
+	color: #404040;
+	font-family: Lato, Montserrat;
+	font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: Montserrat!important;
+}
+p {
+	font-family: Lato;
+}
+
+
+/******************************************MASONRY CSS*********************************************/
+
+div#grid > .grid-item {
+	margin:5px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+	.grid-sizer,
+	.grid-item {
+	  width: 32.333%;
+	}
+	.grid-item.grid-one img {
+    	height: 842px;
+	}
+	.grid-item.grid-two img {
+    height: 562px;
+}
+	.grid-item.grid-five {
+	    width: 65%;
+	}
+}
+
+
+
+/*****************************MAIN HTML********************/
+.header-banner {
+	background: url("img/banner-bg.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position: 0 0;
+}
+	header {
+		background: #54545557;
+		height: 70px;
+	}
+		nav {
+			height: 70px;
+	    	padding: 10px 0;
+		}
+			a.navbar-brand {
+		    	padding: 5px 0px;
+			}
+			ul.nav.navbar-nav {
+				float: right;
+			}
+			ul.nav.navbar-nav li a {
+				color: #fff;
+				font-family: Lato;
+				font-size: 18px;
+				font-weight: 300;
+			}
+	.banner-content {
+		padding: 180px 0 300px;
+	}
+	.banner-content h1 {
+		color: #fff;
+		font-size: 50px;
+		font-weight: 700;
+	}
+	.banner-content p {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 300;
+	}
+	.banner-content .explore-btn {
+		margin-top: 50px;
+	}
+		.banner-content .explore-btn a {
+			color: #fff;
+			font-family: Montserrat;
+			font-size: 18px;
+			font-weight: 400;
+			position: relative;
+		    padding: 20px 30px;
+		    border: 2px solid #929192;
+		}
+			.banner-content .explore-btn a img.travel-img {
+			    margin-left: 10px;
+			}
+
+
+/******************************SECOND SECTION CSS*******************************/
+.second-section{
+	background: url("img/aboutme-bg.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position: 0 0;
+    padding: 160px 0;
+}
+	.started {
+	    color: #333333;
+	    font-family: Lato;
+	    font-size: 32px;
+	    font-weight: 400;
+	}
+	.thanks-for-stoping {
+	    font-family: Lato;
+	    font-size: 18px;
+	    font-weight: 300;
+	    margin-top: 50px;
+	}
+	.already-known {
+	    font-family: Lato;
+	    font-size: 18px;
+	    font-weight: 300;
+	    margin-top: 30px;
+	}
+	.more-about-me-btn {
+		margin-top: 55px;
+	}
+		.more-about-me-btn a{
+			color: #333333;
+			font-family: Montserrat;
+			font-size: 14px;
+			font-weight: 400;
+			position: relative;
+		    padding: 15px 35px;
+		    border: 2px solid #b1b1b1;
+		}
+
+
+/******************************THIRD SECTION CSS*******************************/
+.third-section{
+	background: url("img/prortfolio-bg-update.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position: 0 0;
+}
+	.third-section-content {
+		padding: 70px 30px 150px;
+	}
+		.photo-graphics-btn {
+			margin-bottom: 50px;
+		}
+			.photography-btn {
+				text-align: right;
+				float: right;
+			}
+				.photography-btn a{
+					color: #fff;
+					font-family: Montserrat;
+					font-size: 14px;
+					font-weight: 400;
+					position: relative;
+				    padding: 15px 40px;
+				    border: 2px solid #b1b1b1;
+				}
+				.photography-btn a:hover {
+					background: #e8b200;
+					color: #fff;
+					text-decoration: none;
+				}
+			.graphics-btn {
+				text-align: left;
+			}
+				.graphics-btn a{
+					color: #fff;
+					font-family: Montserrat;
+					font-size: 14px;
+					font-weight: 400;
+					position: relative;
+				    padding: 15px 60px;
+				    border: 2px solid #b1b1b1;
+				}
+				.graphics-btn a:hover {
+					background: #e8b200;
+					color: #fff;
+					text-decoration: none;
+				}
+
+/************GALLER************/
+	/****ONE*****/
+	.grid-item .one {
+		background: #89603d;
+		position: relative;
+	}
+		.logo-hover:hover img {
+			opacity: 0.2;
+			width: 100%;
+		}
+
+		.logo-hover > .text {
+			opacity: 0;
+			
+		}
+			.logo-hover:hover .text {
+				opacity: 1;
+			}
+		.logo-hover .text {
+			color: #fff;
+		}
+			.one .text h1{
+				font-family: Montserrat;
+				font-size: 28px;
+				font-weight: 700;	
+				position: absolute;
+				top: 40%;
+				left: 40%;
+			}
+			.one .text p{
+				font-family: Lato;
+				font-size: 14px;
+				font-weight: 300;	
+				position: absolute;
+				top: 48%;
+				left: 12%;
+				width: 76%;
+				text-align: center;
+				-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+				transition: opacity 0.35s, transform 0.35s;
+				-webkit-transform: translate3d(0,20px,0);
+				transform: translate3d(0,20px,0);
+			}
+
+	/****TWO*****/
+	.grid-item .two {
+		background: #89603d;
+		position: relative;
+	}
+		.two .text h1{
+			font-family: Montserrat;
+			font-size: 28px;
+			font-weight: 700;	
+			position: absolute;
+			top: 37%;
+			left: 22%;
+		}
+		.two .text p{
+			font-family: Lato;
+			font-size: 14px;
+			font-weight: 300;	
+			position: absolute;
+			top: 48%;
+			left: 12%;
+			text-align: center;
+			width: 76%;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			-webkit-transform: translate3d(0,20px,0);
+			transform: translate3d(0,20px,0);
+		}
+
+	/****THIRD****/
+	.grid-item .third {
+		background: #89603d;
+		position: relative;
+	}
+		.third .text h1{
+			font-family: Montserrat;
+			font-size: 28px;
+			font-weight: 700;	
+			position: absolute;
+			top: 30%;
+			left: 21%;
+		}
+		.third .text p{
+			font-family: Lato;
+			font-size: 14px;
+			font-weight: 300;	
+			position: absolute;
+			top: 52%;
+			left: 12%;
+			text-align: center;
+			width: 76%;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			-webkit-transform: translate3d(0,20px,0);
+			transform: translate3d(0,20px,0);
+		}
+		
+
+	.grid-item .four {
+		background: #89603d;
+		position: relative;
+	}
+		.four .text h1{
+			font-family: Montserrat;
+			font-size: 28px;
+			font-weight: 700;	
+			position: absolute;
+			top: 25%;
+			left: 39%;
+		}
+		.four .text p{
+			font-family: Lato;
+			font-size: 14px;
+			font-weight: 300;	
+			position: absolute;
+			top: 47%;
+			left: 12%;
+			text-align: center;
+			width: 76%;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			-webkit-transform: translate3d(0,20px,0);
+			transform: translate3d(0,20px,0);
+		}
+	.grid-item .five{
+		background: #89603d;
+		position: relative;
+	}
+		.five .text h1{
+			font-family: Montserrat;
+			font-size: 28px;
+			font-weight: 700;	
+			position: absolute;
+			top: 27%;
+			left: 18%;
+		}
+		.five .text p{
+			font-family: Lato;
+			font-size: 14px;
+			font-weight: 300;	
+			position: absolute;
+			top: 50%;
+			left: 22%;
+			width: 76%;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+			-webkit-transform: translate3d(0,20px,0);
+			transform: translate3d(0,20px,0);
+		}
+		
+
+/*************HOVER EFFECT******************/
+		.one .logo-hover::before,
+		.one .logo-hover::after,
+		.two .logo-hover::before,
+		.two .logo-hover::after,
+		.third .logo-hover::before,
+		.third .logo-hover::after,
+		.four .logo-hover::before,
+		.four .logo-hover::after,
+		.five .logo-hover::before,
+		.five .logo-hover::after {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			bottom: 20px;
+			left: 20px;
+			content: '';
+			opacity: 0;
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.50s, transform 0.50s;
+		}
+
+		.one .logo-hover::before, 
+		.two .logo-hover::before, 
+		.third .logo-hover::before, 
+		.four .logo-hover::before,
+		.five .logo-hover::before {
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			-webkit-transform: scale(0,1);
+			transform: scale(0,1);
+		}
+
+		.one .logo-hover::after,
+		.two .logo-hover::after, 
+		.third .logo-hover::after, 
+		.four .logo-hover::after,
+		.five .logo-hover::after {
+			border-right: 1px solid #fff;
+			border-left: 1px solid #fff;
+			-webkit-transform: scale(1,0);
+			transform: scale(1,0);
+		}
+
+		.one:hover  .logo-hover::before,
+		.one:hover  .logo-hover::after,
+		.two:hover  .logo-hover::before,
+		.two:hover  .logo-hover::after,
+		.third:hover  .logo-hover::before,
+		.third:hover  .logo-hover::after,
+		.four:hover  .logo-hover::before,
+		.four:hover  .logo-hover::after,
+		.five:hover  .logo-hover::before,
+		.five:hover  .logo-hover::after {
+			opacity: 1;
+			-webkit-transform: scale(1);
+			transform: scale(1);
+		}
+
+		.one:hover p, 
+		.two:hover p, 
+		.third:hover p, 
+		.four:hover p, 
+		.five:hover p {
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+
+
+/******************************FOURTH SECTION CSS*******************************/
+.fourth-section{
+	background: url("img/Testimonial-bg.jpg") no-repeat center center;
+	-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position: 0 0;
+    padding: 90px 0;
+}
+
+	.fourth-section-content .img-icon {
+	    text-align: center;
+	}
+	.slick-slide {
+	    outline: none
+	}
+		.img-icon img {
+			display: inline!important;
+		}
+	.flexible {
+		color: #fff;
+		font-family: Myriad Pro;
+		font-size: 21px;
+		font-style: italic;
+		font-weight: 400;
+		margin-top: 55px;
+	}
+	.adrian-img {
+		margin-top: 45px;
+	}
+
+		.slick-dots li.slick-active button:before {
+			color: #fff!important;
+		}
+		.adrian-cam {
+			color: #fff;
+			font-family: Lato;
+			font-size: 16px;
+			font-weight: 700;
+			margin-top: 10px;
+    		margin-bottom: 0;
+			text-transform: uppercase;
+		}
+		.xiargao {
+			color: #fff;
+			font-family: Lato;
+			font-size: 11px;
+			font-weight: 700;
+			margin-top: 5px;
+			text-transform: uppercase;
+		}
+
+
+/******************************FIFTH SECTION CSS*******************************/
+.fifth-section {
+	background: #f2f2f2;
+	padding: 90px 0;
+}
+	.logo-slider img {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .3s ease-in-out;  
+    }
+    .logo-slider img:hover {
+       filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1);
+    }
